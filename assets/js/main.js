@@ -45,8 +45,9 @@ function initCarousel() {
     const containerWidth = container.offsetWidth;
     const gap = 24;
     const slideLeft = slide.offsetLeft;
+    const trackPadding = parseFloat(getComputedStyle(track).paddingLeft) || 0;
     const centerOffset = (containerWidth - slideWidth) / 2;
-    return slideLeft - centerOffset;
+    return slideLeft - centerOffset - trackPadding;
   }
 
   function goTo(index) {
