@@ -63,11 +63,12 @@ h1, h2, h3, h4, h5, h6 {
 .carousel-container {
   width: 100%;
   max-width: 100%;
+  padding: 0 48px;
 }
 
 .carousel-viewport {
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .carousel-track {
@@ -95,6 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .carousel-card {
   box-shadow: 0 4px 16px var(--shadow-color);
+  overflow: hidden;
 }
 
 .carousel-dot {
@@ -353,12 +355,22 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem;
   }
 
+  .carousel-container {
+    padding: 0 40px;
+  }
+
   .carousel-track {
-    padding: 0 calc((100% - 80%) / 2);
+    padding: 0 calc((100% - 75%) / 2);
   }
 
   .carousel-slide {
-    min-width: 80%;
+    min-width: 75%;
+  }
+
+  .carousel-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
   }
 }
 
