@@ -9,8 +9,12 @@
   <meta property="og:title" content="Ballygawley Celtic FC">
   <meta property="og:description" content="Community-run soccer club based in Ballygawley, Co. Sligo since 1980.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/images/crest.png">
-  <link rel="icon" type="image/png" href="assets/images/crest.png">
+  <meta property="og:image" content="assets/images/logos/bcfc-logo.png">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="assets/images/favicons/site.webmanifest">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -52,9 +56,7 @@
       <div class="flex items-center justify-between h-16 md:h-20">
 
         <a href="#" class="flex items-center gap-3" aria-label="Ballygawley Celtic FC - Home">
-          <div class="w-10 h-10 rounded-full bg-club-green flex items-center justify-center text-white font-heading font-extrabold text-sm border-2 border-club-gold">
-            BC
-          </div>
+          <img src="assets/images/logos/bcfc-logo.png" alt="Ballygawley Celtic FC" class="w-10 h-10 rounded-full object-cover border-2 border-club-gold">
           <span class="font-heading font-bold text-lg hidden sm:block" style="color: var(--text-primary);">Ballygawley Celtic</span>
         </a>
 
@@ -100,8 +102,8 @@
         <svg width="100%" height="100%"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5"/></pattern></defs><rect width="100%" height="100%" fill="url(#grid)"/></svg>
       </div>
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-18 text-center">
-        <div class="hero-crest mx-auto mb-4" aria-hidden="true">
-          <span>BCFC</span>
+        <div class="hero-crest mx-auto mb-4">
+          <img src="assets/images/logos/bcfc-logo-1.png" alt="Ballygawley Celtic FC Logo" class="w-full h-full object-contain">
         </div>
         <h1 class="font-heading font-black text-4xl md:text-5xl lg:text-6xl text-white mb-3">
           Ballygawley Celtic FC
@@ -241,7 +243,7 @@
               <i class="fas fa-futbol text-xl text-club-green"></i>
             </div>
             <h3 class="font-heading font-bold text-lg mb-2" style="color: var(--text-primary);">Senior Football</h3>
-            <p style="color: var(--text-secondary);">Our Men's Senior team competes in the Sligo Leitrim league system against clubs across the northwest.</p>
+            <p style="color: var(--text-secondary);">Our Men's Senior team competes in the <strong style="color: var(--text-primary);">SLDSL Premier League</strong> after winning promotion from the First Division in 2025/26. The team also claimed the <strong style="color: var(--text-primary);">Frank Kennedy Memorial Cup</strong> that season.</p>
           </div>
           <div class="card">
             <div class="w-12 h-12 rounded-lg bg-club-gold/20 flex items-center justify-center mb-4">
@@ -359,31 +361,32 @@
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div class="affiliation-badge">
-            <i class="fas fa-certificate"></i>
+            <img src="assets/images/league/club-mark.png" alt="FAI Club Mark" class="w-12 h-12 object-contain">
             <div>
               <div class="font-heading font-bold text-sm" style="color: var(--text-primary);">FAI Club Mark</div>
-              <div class="text-xs" style="color: var(--text-muted);">Accredited</div>
+              <div class="text-xs" style="color: var(--text-muted);">Entry Level Accredited</div>
             </div>
           </div>
           <div class="affiliation-badge">
-            <i class="fas fa-futbol"></i>
+            <img src="assets/images/league/sldsl.jpg" alt="Sligo Leitrim District Soccer League" class="w-12 h-12 object-contain">
             <div>
               <div class="font-heading font-bold text-sm" style="color: var(--text-primary);">SLDSL</div>
-              <div class="text-xs" style="color: var(--text-muted);">Sligo Leitrim District</div>
+              <div class="text-xs" style="color: var(--text-muted);">Premier League 2025/26</div>
             </div>
           </div>
+          </div>
           <div class="affiliation-badge">
-            <i class="fas fa-map-marker-alt"></i>
+            <img src="assets/images/league/connacht-fa.webp" alt="Connacht Football Association" class="w-12 h-12 object-contain">
             <div>
               <div class="font-heading font-bold text-sm" style="color: var(--text-primary);">Connacht FA</div>
               <div class="text-xs" style="color: var(--text-muted);">Provincial Affiliation</div>
             </div>
           </div>
           <div class="affiliation-badge">
-            <i class="fas fa-child"></i>
+            <img src="assets/images/league/slsfgl.png" alt="Sligo Leitrim Schoolboys & Schoolgirls League" class="w-12 h-12 object-contain">
             <div>
-              <div class="font-heading font-bold text-sm" style="color: var(--text-primary);">SFAI</div>
-              <div class="text-xs" style="color: var(--text-muted);">Schoolboys/girls</div>
+              <div class="font-heading font-bold text-sm" style="color: var(--text-primary);">SLS&SL</div>
+              <div class="text-xs" style="color: var(--text-muted);">Underage League</div>
             </div>
           </div>
         </div>
@@ -447,18 +450,15 @@
           <p class="section-subheading">Proudly supported by local businesses</p>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
           <div class="sponsor-logo">
-            <img src="assets/images/sponsors/sponsor-1.png" alt="Sponsor 1" onerror="this.parentElement.innerHTML='<div class=\'text-center\'><i class=\'fas fa-handshake text-3xl text-club-green mb-2\'></i><p class=\'text-sm font-medium\' style=\'color: var(--text-muted)\'>Sponsor Name</p></div>'">
+            <img src="assets/images/sponsors/castle-dargan.png" alt="Castle Dargan Hotel">
           </div>
           <div class="sponsor-logo">
-            <img src="assets/images/sponsors/sponsor-2.png" alt="Sponsor 2" onerror="this.parentElement.innerHTML='<div class=\'text-center\'><i class=\'fas fa-handshake text-3xl text-club-green mb-2\'></i><p class=\'text-sm font-medium\' style=\'color: var(--text-muted)\'>Sponsor Name</p></div>'">
+            <img src="assets/images/sponsors/mp-hire.gif" alt="MP Hire">
           </div>
           <div class="sponsor-logo">
-            <img src="assets/images/sponsors/sponsor-3.png" alt="Sponsor 3" onerror="this.parentElement.innerHTML='<div class=\'text-center\'><i class=\'fas fa-handshake text-3xl text-club-green mb-2\'></i><p class=\'text-sm font-medium\' style=\'color: var(--text-muted)\'>Sponsor Name</p></div>'">
-          </div>
-          <div class="sponsor-logo">
-            <img src="assets/images/sponsors/sponsor-4.png" alt="Sponsor 4" onerror="this.parentElement.innerHTML='<div class=\'text-center\'><i class=\'fas fa-handshake text-3xl text-club-green mb-2\'></i><p class=\'text-sm font-medium\' style=\'color: var(--text-muted)\'>Sponsor Name</p></div>'">
+            <img src="assets/images/sponsors/porter-ford.png" alt="Porter Ford">
           </div>
         </div>
 
@@ -579,7 +579,7 @@
       <div class="grid md:grid-cols-3 gap-8 mb-8">
         <div>
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 rounded-full bg-club-green flex items-center justify-center text-white font-heading font-extrabold text-sm border-2 border-club-gold">BC</div>
+            <img src="assets/images/logos/bcfc-logo.png" alt="Ballygawley Celtic FC" class="w-10 h-10 rounded-full object-cover border-2 border-club-gold">
             <span class="font-heading font-bold text-lg" style="color: var(--text-primary);">Ballygawley Celtic FC</span>
           </div>
           <p class="text-sm" style="color: var(--text-muted);">Community-run soccer club based in Ballygawley, Co. Sligo. Proudly serving our community since 1980.</p>

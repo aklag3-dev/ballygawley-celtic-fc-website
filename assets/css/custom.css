@@ -295,19 +295,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-crest {
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--club-green), var(--club-green-dark));
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 1.5rem;
   border: 5px solid var(--club-gold);
   box-shadow: 0 8px 32px rgba(71, 160, 88, 0.4);
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .hero-crest {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .affiliation-badge {
@@ -342,12 +346,6 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   .section-heading {
     font-size: 1.5rem;
-  }
-
-  .hero-crest {
-    width: 96px;
-    height: 96px;
-    font-size: 1.2rem;
   }
 
   .cta-btn {
