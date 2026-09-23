@@ -39,11 +39,21 @@ function initCarousel() {
   const total = slides.length;
   const autoPlayDelay = 5000;
 
+  function getSlideOffset(index) {
+    const slide = slides[index];
+    const slideWidth = slide.offsetWidth;
+    const containerWidth = container.offsetWidth;
+    const gap = 24;
+    const slideLeft = slide.offsetLeft;
+    const centerOffset = (containerWidth - slideWidth) / 2;
+    return slideLeft - centerOffset;
+  }
+
   function goTo(index) {
     if (index < 0) index = total - 1;
     if (index >= total) index = 0;
     current = index;
-    const offset = slides[current].offsetLeft;
+    const offset = getSlideOffset(current);
     track.style.transform = `translateX(-${offset}px)`;
     dots.forEach((dot, i) => {
       dot.classList.toggle('active', i === current);
