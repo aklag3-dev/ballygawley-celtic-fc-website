@@ -4,7 +4,7 @@
   --club-gold: #FFD700;
   --club-gold-dark: #B8960F;
   --bg-primary: #FFFFFF;
-  --bg-secondary: #F8FAFC;
+  --bg-secondary: #F5F5F5;
   --bg-card: #FFFFFF;
   --text-primary: #1a1a2e;
   --text-secondary: #475569;
@@ -14,9 +14,9 @@
 }
 
 .dark {
-  --bg-primary: #0f172a;
-  --bg-secondary: #1e293b;
-  --bg-card: #1e293b;
+  --bg-primary: #000000;
+  --bg-secondary: #1a1a1a;
+  --bg-card: #1a1a1a;
   --text-primary: #F1F5F9;
   --text-secondary: #CBD5E1;
   --text-muted: #94A3B8;
