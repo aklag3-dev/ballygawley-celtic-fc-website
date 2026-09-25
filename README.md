@@ -1,10 +1,14 @@
-# Ballygawley Celtic FC Website
+# Ballygawley Celtic FC Website - Backup
+
+**This is a backup repository.** The live website is now hosted at: https://github.com/aklag3-dev/ballygawley-celtic-fc-website-live
 
 Official website for Ballygawley Celtic FC, a community-run soccer club based in Ballygawley, Co. Sligo, Ireland.
 
 ## Live Site
 
 **Website:** https://ballygawleyceltic.ie
+
+**Live Repository:** https://github.com/aklag3-dev/ballygawley-celtic-fc-website-live
 
 ## About
 
@@ -45,17 +49,13 @@ This is a responsive single-page website that serves as the primary online prese
 
 ## Hosting
 
-The website is hosted on GitHub Pages with a custom domain (ballygawleyceltic.ie). Changes pushed to the `main` branch are automatically deployed.
+The live website is hosted on GitHub Pages at https://github.com/aklag3-dev/ballygawley-celtic-fc-website-live with a custom domain (ballygawleyceltic.ie).
+
+This repository serves as a backup of the website code.
 
 ## Development
 
-To make changes to the website:
-
-1. Clone the repository
-2. Make your changes to the HTML, CSS, or JavaScript files
-3. Test locally by opening `index.html` in a browser
-4. Commit and push to the `main` branch
-5. GitHub Pages will automatically deploy the changes
+For current development, please work in the live repository: https://github.com/aklag3-dev/ballygawley-celtic-fc-website-live
 
 ## License
 
